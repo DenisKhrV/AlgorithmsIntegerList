@@ -1,4 +1,4 @@
-package java.pro.sky;
+package pro.sky;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -26,7 +26,7 @@ class StringListImplTest {
 
 
     @Test
-    void add_success() {
+     void add_success() {
         String expected = "Test";
         stringList.add("Test");
         String actual = stringList.get(4);
@@ -111,7 +111,7 @@ class StringListImplTest {
     @Test
     void lastIndexOf_success() {
         int expected = 2;
-        int actual = stringList.indexOf("Hello");
+        int actual = stringList.lastIndexOf("Hello");
         assertEquals(expected, actual);
     }
 
