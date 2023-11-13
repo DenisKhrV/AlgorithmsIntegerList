@@ -21,5 +21,14 @@ public class Main {
 //        long start3 = System.currentTimeMillis();
 //        IntegerListImpl.sortInsertion(arr3);
 //        System.out.println(System.currentTimeMillis() - start3);
+        IntegerListImpl integerList = new IntegerListImpl();
+        integerList.add(10);
+        integerList.add(23);
+        integerList.add(4);
+        integerList.add(7);
+        Integer[] expectedArray = new Integer[]{4, 7, 10, 23};
+        integerList.sort(integerList.toArray());
+        Integer[] actualArray = integerList.toArray();
+        System.out.println(Arrays.toString(actualArray));
     }
 }

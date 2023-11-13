@@ -175,7 +175,23 @@ class IntegerListImplTest {
         //Начало теста
         Integer[] actualArray = integerList.toArray();
         assertEquals(Arrays.toString(expectedArray), Arrays.toString(actualArray));
+    }
 
-
+    @Test
+    void add_growSuccess() {
+        Integer[] expectedArray = new Integer[15];
+        integerList.add(2);
+        integerList.add(2);
+        integerList.add(2);
+        integerList.add(2);
+        integerList.add(2);
+        integerList.add(2);
+        integerList.add(2);
+        integerList.add(2);
+        integerList.add(2);
+        integerList.add(2);
+        integerList.add(2);
+        Integer[] actualArray = integerList.toArray();
+        assertEquals(expectedArray.length, actualArray.length);
     }
 }
